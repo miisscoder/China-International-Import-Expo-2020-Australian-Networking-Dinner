@@ -9,54 +9,108 @@
     <meta name="keywords" content="your keywords">
     <meta name="description" content="your description">
     <meta name="author" content="author, email address">
-    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/base.css" />
     <link rel="stylesheet" type="text/css" href="css/detail.css" />
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/ie.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <!--[if IE 9]> <link rel="stylesheet" type="text/css" href="css/index2.css" /><![endif]-->
-    <!--[if IE 8]> <link rel="stylesheet" type="text/css" href="css/index2.css" /><![endif]-->
-    <!--[if IE 7]> <link rel="stylesheet" type="text/css" href="css/index2.css" /><![endif]-->
-    <!--[if IE 6]> <link rel="stylesheet" type="text/css" href="css/index2.css" /><![endif]-->
+    <script type="text/javascript" src="js/detail.js"></script>
 </head>
-<body class="index">
+<body class="index" data-active="1">
     <div class="main">
-        <div class="one">
+        <div id="section-1" class="section section-1">
+            <div class="one">
+                <div class="logos">
+                    <img src="images/logo-1-phone.png" class="logo-1" />
+                    <img src="images/logo-2-phone.png" class="logo-2" />
+                </div>
+                <div class="content">
+                    <div class="titles">
+                        <div class="title-1">China International Import Expo 2020</div>
+                        <div class="title-2">Australian Networking Dinner</div>
+                        <div class="title-3">
+                            2020 中国国际进口博览会<br />
+                            澳大利亚交流晚宴
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="detail-1">
+                            <p>The Peninsula Shanghai</p>
+                            <p>5:00-8:00 PM, 5 November 2020</p>
+                        </div>
+                        <div class="detail-2">
+                            <p>上海半岛酒店</p>
+                            <p> 2020年11月5日 下午5点-8点</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="two">
+                <img class="phone-show" src="./images/cover-phone.jpg" />
+                <img class="pc-show" src="./images/cover-pc.jpg" />
+            </div>
+            <img src="images/arrow.png" class="arrow"  
+                                      onclick="goto(2)"/>
+        </div>
+        <div id="section-2" class="section section-2">
             <div class="logos">
-                <img src="images/logo-1-pc.png" class="pc-show logo-1" />
-                <img src="images/logo-1-phone.png" class="phone-show logo-1" />
-                <img src="images/logo-2-pc.png" class="pc-show logo-2" />
-                <img src="images/logo-2-phone.png" class="phone-show logo-2" />
+                <img src="images/logo-1-phone-w.png" class="logo-1" />
+                <img src="images/logo-2-phone-w.png" class="logo-2" />
+            </div>
+            <div class="titles">
+                <div class="title-1">China International Import Expo 2020</div>
+                <div class="title-2">Australian Networking Dinner</div>
+                <div class="title-3">
+                    2020 中国国际进口博览会<br />
+                    澳大利亚交流晚宴
+                </div>
             </div>
             <div class="content">
-                <div class="titles">
-                    <div class="title-1">China International Import Expo 2020</div>
-                    <div class="title-2">Australian Networking Dinner</div>
-                    <div class="title-3">
-                        2020 中国国际进口博览会<br />
-                        澳大利亚交流晚宴
+                <div class="panel panel-1">
+                    <div class="title">Date 日期</div>
+                    <div class="content">5 November 2020<br />2020年11月5月</div>
+                </div>
+                <div class="panel panel-2">
+                    <div class="content">
+                        <div class="white">17:00</div>
+                        Registration commences <br />
+                        签到注册 <br />
+                        <div class="white">17:30 - 18:30</div>
+                        Pre-Dinner Drinks <br />
+                        (hosted by NSW Government) <br />
+                        餐前酒会(澳大利亚新南威尔士州政府主办) <br />
+                        <div class="white">18:30 - 20:00</div>
+                        Australian Networking Dinner <br />
+                        澳大利亚交流晚宴 <br />
                     </div>
                 </div>
-                <div class="detail">
-                    <div class="detail-1">
-                        <p>The Peninsula Shanghai</p>
-                        <p>5:00-8:00 PM, 5 November 2020</p>
+                <div class="panel panel-3">
+                    <div class="title">Location 地点</div>
+                    <div class="content">
+                        The Rose Ballroom, 2nd Floor, <br />The Peninsula Shanghai<br />(No. 32 Zhongshan Dong Yi Road, Shanghai)<br />上海半岛酒店2楼玫瑰厅<br/>(上海市黄浦区中山东一路32号)
                     </div>
-                    <div class="detail-2">
-                        <p>上海半岛酒店</p>
-                        <p> 2020年11月5日 下午5点-8点</p>
+                </div>
+                <div class="panel  panel-4">
+                    <div class="content">
+                        If you have any questions, <br />
+                        please contact us at <a href="email:crystal.liang@austrade.gov.au">crystal.liang@austrade.gov.au</a>. <br />
+                        如有疑问，请发送邮件至<br />
+                        <a href="email:crystal.liang@austrade.gov.au">crystal.liang@austrade.gov.au</a> <br />
                     </div>
                 </div>
             </div>
-            <div class="btns">
-                <a href="book-en.html" class="btn btn-en">English</a>
-                <a href="book-cn.html" class="btn btn-cn">中 文</a>
-            </div>
+            <img src="images/arrow.png" class="arrow" onclick="goto(3)"/>
         </div>
-        <div class="two">
-            <img class="phone-show" src="./images/cover-phone.jpg" />
-            <img class="pc-show" src="./images/cover-pc.jpg" />
+        <div id="section-3" class="section section-3">
+            <div class="logos">
+                <img src="images/logo-1-phone-w.png" class="logo-1" />
+                <img src="images/logo-2-phone-w.png" class="logo-2" />
+            </div>
+            <img src="images/map.png" class="map" />
+            <div class="content">
+                <div class="white">Transportation Instructions<br />交通路线</div>
+                <p>Take Metro Line 2 or Line 10 (arrive at Nanjing East Road Station). Take Exit 6, walk around 800 metres to arrive at the Peninsula Hotel.</p>
+                <p>搭乘地铁2号线或者10号线 (至南京东路站下车，6号口出站，步行约800米可到达半岛酒店)</p>
+            </div>
         </div>
     </div>
 </body>

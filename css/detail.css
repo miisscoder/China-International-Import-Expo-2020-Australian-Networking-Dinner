@@ -1,152 +1,119 @@
 @charset "UTF-8";
-.main {
-  width: 100%;
-  height: 100vh;
-  /*background: url(../images/bk/pc/KV-1080x1920PX-9.30-01-CN-封面.jpg) no-repeat;*/
-  /*background-size: 100% 100%;*/
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
-}
-.main * {
-  color: #002316;
-}
-
 @media (max-width: 1000px) {
   .main {
-    /*background: url(../images/bk/phone/KV-1080x1920PX-9.30-封面-V4.jpg) no-repeat;
-    background-size: 100% 100%;*/
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-}
-.one {
-  opacity: 1;
-  width: 55%;
-  margin-left: 4.5%;
-  margin-right: 2.5%;
-  padding: 45px 0 80px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.one .logos {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-.one .logos .logo-1 {
-  width: 44.5%;
-  height: auto;
-}
-.one .logos .logo-2 {
-  width: 26%;
-  height: auto;
-}
-@media (max-width: 1000px) {
-  .one .logos .logo-1 {
-    width: 55%;
+    width: 100%;
     height: auto;
+    /*background: url(../design/detail-1.jpg) no-repeat;*/
+    background-size: 100% auto;
   }
-  .one .logos .logo-2 {
-    width: 30%;
-    height: auto;
+  .main * {
+    color: #002316;
   }
-}
-.one .content {
-  padding-left: 5px;
-  padding-top: 30px;
-}
-.one .content .titles .title-1 {
-  font-family: "AU Sans BETA Text-Bold";
-  font-size: 100%;
-  color: #002316;
-}
-.one .content .titles .title-2 {
-  font-family: "AU Sans BETA Display-Extrabold";
-  font-size: 100%;
-  color: #002316;
-}
-.one .content .titles .title-3 {
-  font-family: "AU Sans BETA Text-Bold";
-  font-size: 110%;
-  color: #ceb888;
-  padding-top: 30px;
-  line-height: 60px;
-  font-weight: bold;
-}
-.one .content .detail {
-  padding-top: 60px;
-  padding-bottom: 40px;
-}
-.one .content .detail .detail-1 {
-  font-family: "AU Sans BETA Text-Medium";
-  font-size: 19.5px;
-}
-.one .content .detail .detail-2 {
-  padding-top: 10px;
-  font-family: "SourceHanSansCN-Medium";
-  font-size: 19.5px;
-}
-.one .btns {
-  display: flex;
-  justify-content: flex-start;
-}
-.one .btns .btn {
-  font-family: "AU Sans BETA Text-Medium";
-  color: #002316;
-  text-align: center;
-  display: block;
-  width: 26.5%;
-  height: 52px;
-  line-height: 52px;
-  margin-right: 63px;
-  margin-left: 5px;
-  border: 1px solid #216644;
-  border-radius: 10px;
-  font-size: 28px;
-}
-.one .btns .btn:last-of-type {
-  font-family: "SourceHanSansCN-Bold";
-}
 
-@media (max-width: 1000px) {
-  .one {
+  .section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .section img.arrow {
+    position: absolute;
+    bottom: 1rem;
+    width: 10%;
+    height: auto;
+    left: 45%;
+    z-index: 5;
+    animation: arrow-move 1s ease infinite;
+  }
+  @keyframes arrow-move {
+    0% {
+      bottom: 1rem;
+    }
+    50% {
+      bottom: 0.5rem;
+    }
+    100% {
+      bottom: 0rem;
+    }
+  }
+  @-moz-keyframes arrow-move /* Firefox */ {
+    0% {
+      bottom: 1rem;
+    }
+    50% {
+      bottom: 0.5rem;
+    }
+    100% {
+      bottom: 0rem;
+    }
+  }
+  @-webkit-keyframes arrow-move /* Safari 和 Chrome */ {
+    0% {
+      bottom: 1rem;
+    }
+    50% {
+      bottom: 0.5rem;
+    }
+    100% {
+      bottom: 0rem;
+    }
+  }
+  @-o-keyframes arrow-move /* Opera */ {
+    0% {
+      bottom: 1rem;
+    }
+    50% {
+      bottom: 0.5rem;
+    }
+    100% {
+      bottom: 0rem;
+    }
+  }
+
+  .section-1 .one {
     margin: 0;
     width: 100%;
     padding-top: calc(100vh * 0.044);
     padding-bottom: 0;
     height: 36.3%;
-    justify-content: flex-start;
   }
-  .one .logos {
+  .section-1 .one .logos {
     padding-left: calc(100vw * 0.1);
     padding-right: calc(100vw * 0.1);
     padding-bottom: calc(100vh * 0.044);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
   }
-  .one .content {
+  .section-1 .one .logos .logo-1 {
+    width: 55%;
+    height: auto;
+  }
+  .section-1 .one .logos .logo-2 {
+    width: 30%;
+    height: auto;
+  }
+  .section-1 .one .content {
     padding-left: 0;
     padding-top: 0;
   }
-  .one .content .titles {
+  .section-1 .one .content .titles {
     text-align: center;
     padding-left: calc(100vw * 0.1);
     padding-right: calc(100vw * 0.1);
   }
-  .one .content .titles .title-1 {
+  .section-1 .one .content .titles .title-1 {
     font-family: "AU Sans BETA Text-Bold";
     font-size: 0.41rem;
     color: #002316;
     padding-bottom: 0;
   }
-  .one .content .titles .title-2 {
+  .section-1 .one .content .titles .title-2 {
     font-family: "AU Sans BETA Display-Extrabold";
     font-size: 0.423rem;
     color: #002316;
     padding-bottom: 0.1rem;
   }
-  .one .content .titles .title-3 {
+  .section-1 .one .content .titles .title-3 {
     font-family: "SourceHanSansCN-Bold";
     color: #ceb888;
     line-height: 0.66rem;
@@ -154,11 +121,11 @@
     padding-top: 0;
     padding-bottom: 0.28rem;
   }
-  .one .content .detail {
+  .section-1 .one .content .detail {
     padding-top: 0;
     padding-bottom: 0;
   }
-  .one .content .detail p {
+  .section-1 .one .content .detail p {
     display: block;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -166,92 +133,50 @@
     margin-inline-end: 0px;
     font-size: 0.3rem;
   }
-  .one .content .detail .detail-1 {
+  .section-1 .one .content .detail .detail-1 {
     font-family: "AU Sans BETA Text-Medium";
     display: flex;
     justify-content: center;
   }
-  .one .content .detail .detail-1 p:first-of-type {
+  .section-1 .one .content .detail .detail-1 p:first-of-type {
     width: 44%;
     border-right: 1px solid #002316;
     text-align: right;
     padding-right: 0.14rem;
   }
-  .one .content .detail .detail-1 p:last-of-type {
+  .section-1 .one .content .detail .detail-1 p:last-of-type {
     width: 56%;
     padding-left: 0.14rem;
   }
-  .one .content .detail .detail-2 {
+  .section-1 .one .content .detail .detail-2 {
     font-family: "SourceHanSansCN-Medium";
     display: flex;
     justify-content: center;
     padding-top: 0px;
   }
-  .one .content .detail .detail-2 p:first-of-type {
+  .section-1 .one .content .detail .detail-2 p:first-of-type {
     width: 44%;
     border-right: 1px solid #002316;
     text-align: right;
     padding-right: 0.14rem;
   }
-  .one .content .detail .detail-2 p:last-of-type {
+  .section-1 .one .content .detail .detail-2 p:last-of-type {
     width: 56%;
     padding-left: 0.14rem;
   }
-  .one .btns {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-left: 10%;
-    padding-right: 10%;
-    height: calc(100% - 36.3% - 48% );
-  }
-  .one .btns .btn {
-    color: #002316;
-    text-align: center;
-    display: block;
-    width: 40%;
-    line-height: 1.2rem;
-    height: 1.2rem;
-    margin-right: 0;
-    margin-left: 0;
-    border: 1px solid #216644;
-    border-radius: 0.1rem;
-    font-size: 0.37rem;
-  }
-}
-.two {
-  opacity: 1;
-  width: 38%;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-.two::after {
-  content: "";
-  display: block;
-  background: url(../images/light.png) no-repeat 0 0;
-  background-size: 100% 100%;
-  position: absolute;
-  width: 100%;
-  height: calc(100vw * 0.38);
-  top: calc(-100vw * 0.38 * 0.55);
-  left: 30%;
-}
-@media (max-width: 1000px) {
-  .two {
+  .section-1 .two {
     width: 100%;
-    height: 48%;
+    height: 63.7%;
     overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .two::after {
+  .section-1 .two::after {
+    content: "";
+    display: block;
+    background: url(../images/light.png) no-repeat 0 0;
     background-size: 100% auto;
     position: absolute;
     width: 90%;
@@ -259,9 +184,153 @@
     top: calc(-90vw * 0.52);
     left: 70%;
   }
-  .two img {
+  .section-1 .two img {
     height: auto;
     width: 100%;
+  }
+
+  .section-2 {
+    background: url(../images/bk-2.jpg) no-repeat;
+    background-size: 100% 100%;
+    margin: 0;
+    width: 100%;
+    padding-top: calc(100vh * 0.044);
+    padding-bottom: 0;
+    display: none;
+  }
+  .section-2 .logos {
+    padding-left: calc(100vw * 0.1);
+    padding-right: calc(100vw * 0.1);
+    padding-bottom: calc(100vh * 0.044);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .section-2 .logos .logo-1 {
+    width: 55%;
+    height: auto;
+  }
+  .section-2 .logos .logo-2 {
+    width: 30%;
+    height: auto;
+  }
+  .section-2 .titles {
+    text-align: center;
+    padding-left: calc(100vw * 0.1);
+    padding-right: calc(100vw * 0.1);
+  }
+  .section-2 .titles .title-1 {
+    font-family: "AU Sans BETA Text-Bold";
+    font-size: 0.41rem;
+    color: #ffffff;
+    padding-bottom: 0;
+  }
+  .section-2 .titles .title-2 {
+    font-family: "AU Sans BETA Display-Extrabold";
+    font-size: 0.423rem;
+    color: #ffffff;
+    padding-bottom: 0.1rem;
+  }
+  .section-2 .titles .title-3 {
+    font-family: "SourceHanSansCN-Bold";
+    color: #ceb888;
+    line-height: 0.66rem;
+    font-size: 0.51rem;
+    padding-top: 0;
+    padding-bottom: 0.28rem;
+  }
+  .section-2 .content {
+    padding-left: calc(100vw * 0.1);
+    padding-right: calc(100vw * 0.1);
+  }
+  .section-2 .content .panel {
+    border: 1px solid #ceb888;
+    border-radius: 0.2rem;
+    overflow: hidden;
+    text-align: center;
+    color: #ceb888;
+    font-size: 0.39rem;
+    margin-bottom: 0.28rem;
+  }
+  .section-2 .content .panel .title {
+    line-height: 1.5;
+    background-color: #ceb888;
+    color: #002316;
+    font-family: "AU Sans BETA Text-Regular";
+  }
+  .section-2 .content .panel .content {
+    color: #ceb888;
+    font-family: "AU Sans BETA Text-Regular";
+    padding-bottom: 0.28rem;
+    padding-top: 0.28rem;
+  }
+  .section-2 .content .panel .white {
+    color: #ffffff;
+  }
+  .section-2 .content .panel a {
+    color: #ceb888;
+  }
+  .section-2 .content .panel.panel-4 {
+    border: none;
+    font-size: 0.33rem;
+  }
+  .section-2 .content .panel.panel-4 .content {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .section-3 {
+    background: url(../images/bk-2.jpg) no-repeat;
+    background-size: 100% 100%;
+    margin: 0;
+    width: 100%;
+    padding-top: calc(100vh * 0.044);
+    padding-bottom: 0;
+    display: none;
+  }
+  .section-3 .logos {
+    padding-left: calc(100vw * 0.1);
+    padding-right: calc(100vw * 0.1);
+    padding-bottom: calc(100vh * 0.044);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .section-3 .logos .logo-1 {
+    width: 55%;
+    height: auto;
+  }
+  .section-3 .logos .logo-2 {
+    width: 30%;
+    height: auto;
+  }
+  .section-3 img.map {
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+  .section-3 .content {
+    padding-left: calc(100vw * 0.1);
+    padding-right: calc(100vw * 0.1);
+    font-family: "AU Sans BETA Text-Regular";
+    padding-bottom: 0.28rem;
+    padding-top: 0.28rem;
+    text-align: center;
+    font-size: 0.3rem;
+  }
+  .section-3 .content .white {
+    color: #ffffff;
+    padding-bottom: 0.2rem;
+  }
+  .section-3 .content a {
+    color: #ceb888;
+  }
+  .section-3 .content p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: #ceb888;
+    padding-bottom: 0.1rem;
   }
 }
 
