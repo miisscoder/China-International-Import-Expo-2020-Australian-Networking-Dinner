@@ -1,0 +1,578 @@
+/* ==========================================================================
+    公共样式
+============================================================================ */
+
+body {
+    min-height: 100%;
+    overflow-y: auto;
+    background: url(../images/bk-1.jpg) no-repeat center center;
+    /*background: url(../images/bk/pc/KV-1080x1920PX-9.30-02-CN.jpg) no-repeat center center;*/
+    background-size: 100% 100%;
+    /*background-position: top;*/
+    width: 100%;
+}
+
+.page-top {
+    padding-top: 55px;
+    padding-bottom: 40px;
+}
+
+.wrap {
+    width: 81%;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+
+.logos {
+    width: 100%;
+    display: flex;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -moz-box; /* Firefox 17- */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: -moz-flex; /* Firefox 18+ */
+    display: -ms-flexbox; /* IE 10 */
+    display: flex; /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+    .logos .logo-1 {
+        width: 29%;
+    }
+
+    .logos .logo-2 {
+        width: 17%;
+    }
+
+.titles {
+    text-align: center;
+    padding-top: 40px;
+}
+
+    .titles .title-1 {
+        font-family: 'AU Sans BETA Text-Bold';
+        font-size: 39px;
+        color: #ffffff;
+    }
+
+    .titles .title-2 {
+        font-family: 'AU Sans BETA Display-Extrabold';
+        font-size: 40px;
+        color: #ceb888;
+        padding-top: 5px;
+    }
+
+    .titles .title-3 {
+        font-family: 'AU Sans BETA Text-Medium';
+        font-size: 16px;
+        color: #ceb888;
+        padding-top: 12px;
+        line-height: 20px;
+    }
+
+.title {
+    font-family: 'AU Sans BETA Text-Bold';
+    color: #ffffff;
+    text-align: center;
+    font-size: 39px;
+    margin-bottom: 70px;
+    margin-top: 60px;
+}
+
+.search {
+    position: relative;
+    margin-top: 0px;
+}
+
+    .search .input {
+        width: 100%;
+        height: 75px;
+        border: 1px solid #9b9a71;
+        border-radius: 20px;
+        padding: 10px 0;
+        position: relative;
+        margin-bottom: 32px;
+    }
+
+        .search .input.input-d {
+            width: 47.7%;
+        }
+
+        .search .input input {
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: #f4d884;
+            font-size: 27.5px;
+            padding: 0 25px;
+            line-height: 100%;
+            font-family: 'AU Sans BETA Text-Medium';
+            font-weight: lighter;
+        }
+
+        .search .input select {
+            background: none;
+            display: block;
+            width: 100%;
+            height: 100%;
+            line-height: .5rem;
+            font-size: .24rem;
+            color: #f4d884;
+            padding: 0 .2rem;
+            border: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+
+        .search .input input::placeholder {
+            color: #a9b582;
+        }
+
+        .search .input input::-webkit-input-placeholder { /* WebKit browsers */
+            color: #a9b582;
+        }
+
+        .search .input input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color: #a9b582;
+        }
+
+        .search .input input::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color: #a9b582;
+        }
+
+        .search .input input:-ms-input-placeholder { /* Internet Explorer 10+ */
+            color: #a9b582;
+        }
+
+        .search .input .search-tips {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: calc(100% + 4px);
+            overflow-y: auto;
+            border: 1px solid #9b9a71;
+            border-radius: .1rem;
+            background-color: transparent;
+            display: none;
+        }
+
+            .search .input .search-tips li {
+                line-height: .4rem;
+                font-size: .2rem;
+                color: #a9b582;
+                padding: 0 .2rem;
+            }
+
+            .search .input .search-tips.drop-tips {
+                position: absolute;
+                width: calc(100% + 2px);
+                left: -1px;
+                top: 0;
+                overflow-y: auto;
+                border: 1px solid #9b9a71;
+                border-radius: 20px;
+                background: linear-gradient(to bottom right, #147261, #023427);
+                display: none;
+                padding: 15px 0;
+            }
+
+                .search .input .search-tips.drop-tips li {
+                    line-height: 42.5px;
+                    font-size: 27.5px;
+                    font-family: 'AU Sans BETA Text-Medium';
+                    font-weight: lighter;
+                    color: #a9b582;
+                    padding: 0 25px;
+                    cursor: pointer;
+                }
+
+    .search .submit {
+        height: 60px;
+        line-height: 60px;
+        margin: 53px auto 0;
+        width: 200px;
+        border-radius: 10px;
+        border: 1px solid rgba(206,184,136,0.7);
+        background-color: rgba(206,184,136,0.85);
+        font-size: 38px;
+        color: #002316;
+        font-family: 'AU Sans BETA Text-Medium';
+    }
+
+
+
+.search-tips {
+    background: #fff;
+    z-index: 9999;
+}
+
+body.en .search .input .search-tips.drop-tips {
+    width: 600px;
+    top: -1px;
+}
+
+mark {
+    background-color: rgba(255, 255, 255, 0);
+    color: #ff6600;
+}
+
+.toast {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    display: none;
+    background: rgba(0, 0, 0, .5);
+}
+
+    .toast .toast-wrap {
+        width: 100%;
+        height: 100%;
+    }
+
+    .toast .toast-box {
+        width: 6rem;
+        border: 1px solid #F3D884;
+        border-radius: .1rem;
+        padding: .2rem;
+        box-shadow: 0 0 .3rem rgba(244, 216, 132, .9) inset;
+        position: relative;
+        background: rgba(11, 111, 111, .7) url(../images/shadow.png);
+        background-size: 100% 100%;
+        position: relative;
+    }
+
+        .toast .toast-box p {
+            position: relative;
+            z-index: 3;
+            font-size: .2rem;
+            color: #F3D884;
+        }
+
+        .toast .toast-box::before {
+            display: block;
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            box-shadow: .1rem .1rem .1rem rgba(35, 24, 21, .2);
+        }
+
+.searchtext {
+    width: 6rem;
+    border: 1px solid #F3D884;
+    border-radius: .1rem;
+    padding: .2rem;
+    box-shadow: 0 0 .3rem rgba(244, 216, 132, .9) inset;
+    background: rgba(11, 111, 111, .3) url(../images/shadow.png);
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: .44rem;
+    left: 50%;
+    margin-left: -3rem;
+    display: none;
+}
+
+    .searchtext p {
+        position: relative;
+        z-index: 3;
+        font-size: .24rem;
+        color: #F3D884;
+        text-align: center;
+    }
+
+    .searchtext::before {
+        display: block;
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        box-shadow: .1rem .1rem .1rem rgba(35, 24, 21, .2);
+    }
+
+/*.form {
+    display: block;
+}*/
+
+.modal {
+    display: none;
+    width: 800px;
+    margin: 20px auto;
+}
+
+    .modal .modal-content {
+        background-color: rgba(255,255,255,0.2);
+        height: 490px;
+        border-radius: 0.5rem;
+        padding-top: 95px;
+        box-shadow: rgba(0,0,0,0.15) 0 -60px 80px;
+    }
+
+        .modal .modal-content p {
+            margin: 0 auto;
+            color: #ffffff;
+            text-align: center;
+            font-family: 'AU Sans BETA Text-Medium';
+            font-size: 32px;
+            line-height: 1.56;
+        }
+
+    .modal .modal-btn {
+        margin: 55px auto 0;
+        border-radius: 50%;
+        height: 90px;
+        width: 90px;
+        line-height: 90px;
+        font-size: 32px;
+        text-align: center;
+        font-weight: lighter;
+        border: 1px solid rgba(206,184,136,0.9);
+        background-color: rgba(206,184,136,0.9);
+        color: #002316;
+        font-family: 'AU Sans BETA Text-Medium';
+        display: block;
+    }
+
+@media (max-width: 1000px) {
+    body {
+        min-height: 100vh;
+        overflow-y: auto;
+        background: url(../images/bk-2.jpg) no-repeat center center;
+        /*background: url(../images/bk/phone/KV-1080x1920PX-9.30-01.jpg) no-repeat center center;*/
+        background-size: 100% 100%;
+        /*background-position: top;*/
+        width: 100%;
+    }
+
+    @media (max-width: 321px) {
+        .page {
+            min-height: 580px;
+        }
+    }
+
+    .page-top {
+        padding-top: 0.8rem;
+    }
+
+    .logos {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .logos .logo-1 {
+            width: 55%;
+        }
+
+        .logos .logo-2 {
+            width: 30%;
+        }
+
+    .titles {
+        text-align: center;
+        padding-top: 0.7rem;
+    }
+
+        .titles .title-1 {
+            font-family: 'AU Sans BETA Text-Bold';
+            font-size: 0.41rem;
+            color: #ffffff;
+        }
+
+        .titles .title-2 {
+            font-family: 'AU Sans BETA Display-Extrabold';
+            font-size: 0.41rem;
+            color: #ceb888;
+            padding-top: 0.03rem;
+        }
+
+        .titles .title-3 {
+            font-family: 'AU Sans BETA Text-Medium';
+            font-size: 0.3rem;
+            color: #ceb888;
+            padding-top: 0.4rem;
+            line-height: 0.3rem;
+        }
+
+    .title {
+        font-family: 'AU Sans BETA Text-Bold';
+        color: #ffffff;
+        text-align: center;
+        font-size: 0.41rem;
+        margin-bottom: 0.35rem;
+        margin-top: 0.85rem;
+    }
+
+    .search {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+        .search .input {
+            height: auto;
+            width: 100%;
+            border-radius: 0.22rem;
+            border: 1px solid rgba(206,184,136,0.7);
+            padding: 0;
+            margin-bottom: 0.52rem;
+        }
+
+            .search .input.input-d {
+                width: 100%;
+            }
+
+            .search .input input {
+                height: 1rem;
+                line-height: 1rem;
+                margin: 0;
+                font-size: 0.397rem;
+                padding: 0 0.3rem;
+            }
+
+        .search .submit {
+            height: 1.2rem;
+            line-height: 1.2rem;
+            margin: 13px auto 0;
+            width: 42%;
+            border-radius: 0.2rem;
+            border: 1px solid rgba(206,184,136,0.7);
+            background-color: rgba(206,184,136,0.85);
+            font-size: 0.43rem;
+            color: #002316;
+            font-family: 'AU Sans BETA Text-Medium';
+        }
+
+        .search .input .search-tips li {
+            line-height: .6rem;
+        }
+
+        body.en .search .input .search-tips.drop-tips,
+        .search .input .search-tips.drop-tips {
+            width: 100%;
+            overflow-y: auto;
+            border: 1px solid #ceb888;
+            border-radius: .1rem;
+            display: none;
+            position: relative;
+            top: unset;
+            margin: 0;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 0px;
+            border: none;
+            height: unset;
+            padding: 0.4rem 0 0;
+            background: none;
+            background-color: transparent;
+        }
+
+            .search .input .search-tips.drop-tips li {
+                font-size: 0.397rem;
+                line-height: 0.42rem;
+                margin-bottom: 0.4rem;
+                padding: 0 0.3rem;
+                font-family: 'AU Sans BETA Text-Medium';
+                font-weight: lighter;
+            }
+
+    .modal {
+        position: absolute;
+        top: 5rem;
+        left: calc(50% - 38%);
+        width: 76%;
+    }
+
+        .modal .modal-content {
+            height: 50%;
+            border-radius: 0.5rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+            .modal .modal-content p {
+                margin: 0 auto;
+                color: #ffffff;
+                text-align: center;
+                font-family: 'AU Sans BETA Text-Medium';
+                font-size: 0.42rem;
+                line-height: 1.625;
+            }
+
+        .modal .modal-btn {
+            margin: 22px auto 0;
+            border-radius: 50%;
+            height: 1.2rem;
+            width: 1.2rem;
+            line-height: 1.28rem;
+            font-size: 0.43rem;
+            text-align: center;
+            font-weight: lighter;
+            border: 1px solid rgba(206,184,136,0.9);
+            background-color: rgba(206,184,136,0.9);
+            font-size: 0.43rem;
+            color: #002316;
+            font-family: 'AU Sans BETA Text-Medium';
+        }
+
+    body.en .modal .modal-btn {
+        line-height: 1.23rem;
+    }
+
+    body.cn .modal .modal-btn {
+        line-height: 1.2rem;
+    }
+
+    .toast .toast-box {
+        width: 80%;
+        padding: .5rem;
+    }
+
+        .toast .toast-box p {
+            font-size: 0.397rem;
+        }
+}
+
+body.cn .title-1 {
+    font-family: 'SourceHanSansCN-Bold';
+}
+
+body.cn .title-2 {
+    font-family: 'SourceHanSansCN-Bold';
+}
+
+body.cn .title-3 {
+    font-family: 'SourceHanSansCN-Medium';
+}
+
+body.cn .title {
+    font-family: 'SourceHanSansCN-Bold';
+}
+
+body.cn input {
+    font-family: 'SourceHanSansCN-Regular';
+}
+
+body.cn .submit {
+    font-family: 'SourceHanSansCN-Bold';
+}
+
+body.cn .modal p {
+    font-family: 'SourceHanSansCN-Medium';
+}
+
+body.cn .modal .modal-btn {
+    font-family: 'SourceHanSansCN-Medium';
+}

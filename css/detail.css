@@ -1,0 +1,268 @@
+@charset "UTF-8";
+.main {
+  width: 100%;
+  height: 100vh;
+  /*background: url(../images/bk/pc/KV-1080x1920PX-9.30-01-CN-封面.jpg) no-repeat;*/
+  /*background-size: 100% 100%;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.main * {
+  color: #002316;
+}
+
+@media (max-width: 1000px) {
+  .main {
+    /*background: url(../images/bk/phone/KV-1080x1920PX-9.30-封面-V4.jpg) no-repeat;
+    background-size: 100% 100%;*/
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+.one {
+  opacity: 1;
+  width: 55%;
+  margin-left: 4.5%;
+  margin-right: 2.5%;
+  padding: 45px 0 80px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.one .logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.one .logos .logo-1 {
+  width: 44.5%;
+  height: auto;
+}
+.one .logos .logo-2 {
+  width: 26%;
+  height: auto;
+}
+@media (max-width: 1000px) {
+  .one .logos .logo-1 {
+    width: 55%;
+    height: auto;
+  }
+  .one .logos .logo-2 {
+    width: 30%;
+    height: auto;
+  }
+}
+.one .content {
+  padding-left: 5px;
+  padding-top: 30px;
+}
+.one .content .titles .title-1 {
+  font-family: "AU Sans BETA Text-Bold";
+  font-size: 100%;
+  color: #002316;
+}
+.one .content .titles .title-2 {
+  font-family: "AU Sans BETA Display-Extrabold";
+  font-size: 100%;
+  color: #002316;
+}
+.one .content .titles .title-3 {
+  font-family: "AU Sans BETA Text-Bold";
+  font-size: 110%;
+  color: #ceb888;
+  padding-top: 30px;
+  line-height: 60px;
+  font-weight: bold;
+}
+.one .content .detail {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.one .content .detail .detail-1 {
+  font-family: "AU Sans BETA Text-Medium";
+  font-size: 19.5px;
+}
+.one .content .detail .detail-2 {
+  padding-top: 10px;
+  font-family: "SourceHanSansCN-Medium";
+  font-size: 19.5px;
+}
+.one .btns {
+  display: flex;
+  justify-content: flex-start;
+}
+.one .btns .btn {
+  font-family: "AU Sans BETA Text-Medium";
+  color: #002316;
+  text-align: center;
+  display: block;
+  width: 26.5%;
+  height: 52px;
+  line-height: 52px;
+  margin-right: 63px;
+  margin-left: 5px;
+  border: 1px solid #216644;
+  border-radius: 10px;
+  font-size: 28px;
+}
+.one .btns .btn:last-of-type {
+  font-family: "SourceHanSansCN-Bold";
+}
+
+@media (max-width: 1000px) {
+  .one {
+    margin: 0;
+    width: 100%;
+    padding-top: calc(100vh * 0.044);
+    padding-bottom: 0;
+    height: 36.3%;
+    justify-content: flex-start;
+  }
+  .one .logos {
+    padding-left: calc(100vw * 0.1);
+    padding-right: calc(100vw * 0.1);
+    padding-bottom: calc(100vh * 0.044);
+  }
+  .one .content {
+    padding-left: 0;
+    padding-top: 0;
+  }
+  .one .content .titles {
+    text-align: center;
+    padding-left: calc(100vw * 0.1);
+    padding-right: calc(100vw * 0.1);
+  }
+  .one .content .titles .title-1 {
+    font-family: "AU Sans BETA Text-Bold";
+    font-size: 0.41rem;
+    color: #002316;
+    padding-bottom: 0;
+  }
+  .one .content .titles .title-2 {
+    font-family: "AU Sans BETA Display-Extrabold";
+    font-size: 0.423rem;
+    color: #002316;
+    padding-bottom: 0.1rem;
+  }
+  .one .content .titles .title-3 {
+    font-family: "SourceHanSansCN-Bold";
+    color: #ceb888;
+    line-height: 0.66rem;
+    font-size: 0.51rem;
+    padding-top: 0;
+    padding-bottom: 0.28rem;
+  }
+  .one .content .detail {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .one .content .detail p {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 0.3rem;
+  }
+  .one .content .detail .detail-1 {
+    font-family: "AU Sans BETA Text-Medium";
+    display: flex;
+    justify-content: center;
+  }
+  .one .content .detail .detail-1 p:first-of-type {
+    width: 44%;
+    border-right: 1px solid #002316;
+    text-align: right;
+    padding-right: 0.14rem;
+  }
+  .one .content .detail .detail-1 p:last-of-type {
+    width: 56%;
+    padding-left: 0.14rem;
+  }
+  .one .content .detail .detail-2 {
+    font-family: "SourceHanSansCN-Medium";
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+  }
+  .one .content .detail .detail-2 p:first-of-type {
+    width: 44%;
+    border-right: 1px solid #002316;
+    text-align: right;
+    padding-right: 0.14rem;
+  }
+  .one .content .detail .detail-2 p:last-of-type {
+    width: 56%;
+    padding-left: 0.14rem;
+  }
+  .one .btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: calc(100% - 36.3% - 48% );
+  }
+  .one .btns .btn {
+    color: #002316;
+    text-align: center;
+    display: block;
+    width: 40%;
+    line-height: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0;
+    margin-left: 0;
+    border: 1px solid #216644;
+    border-radius: 0.1rem;
+    font-size: 0.37rem;
+  }
+}
+.two {
+  opacity: 1;
+  width: 38%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.two::after {
+  content: "";
+  display: block;
+  background: url(../images/light.png) no-repeat 0 0;
+  background-size: 100% 100%;
+  position: absolute;
+  width: 100%;
+  height: calc(100vw * 0.38);
+  top: calc(-100vw * 0.38 * 0.55);
+  left: 30%;
+}
+@media (max-width: 1000px) {
+  .two {
+    width: 100%;
+    height: 48%;
+    overflow: hidden;
+  }
+  .two::after {
+    background-size: 100% auto;
+    position: absolute;
+    width: 90%;
+    height: 90vw;
+    top: calc(-90vw * 0.52);
+    left: 70%;
+  }
+  .two img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=detail.css.map */
