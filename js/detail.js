@@ -81,11 +81,18 @@
     }
     var startY;
     $('.section').on('touchstart', function (e) {
+        if ($(e.target).hasClass('btn-arrow') ||
+            $(e.target).hasClass('arrow')) {
+            return;
+        }
         e.preventDefault();
         startY = e.originalEvent.changedTouches[0].pageY;
-        console.log(startY);
     });
     $('.section').on('touchend', function (e) {
+        if ($(e.target).hasClass('btn-arrow') ||
+            $(e.target).hasClass('arrow')) {
+            return;
+        }
         e.preventDefault();
         var moveEndY = e.originalEvent.changedTouches[0].pageY;
         var Y = moveEndY - startY;

@@ -16,68 +16,149 @@
         height: 100vh;
         position: relative;
 
-        img.arrow {
+        .btn-arrow {
             position: absolute;
-            bottom: 1rem;
-            width: 10%;
-            height: auto;
-            left: 45%;
-            z-index: 5;
-            animation: arrow-move 1s ease infinite;
+            width: 20%;
+            height: 2rem;
+            left: 40%;
 
-            @keyframes arrow-move {
-                0% {
-                    bottom: 1rem;
-                }
-
-                50% {
-                    bottom: 0.5rem;
-                }
-
-                100% {
-                    bottom: 0rem;
-                }
+            &.down {
+                bottom: 0;
             }
 
-            @-moz-keyframes arrow-move /* Firefox */ {
-                0% {
-                    bottom: 1rem;
-                }
-
-                50% {
-                    bottom: 0.5rem;
-                }
-
-                100% {
-                    bottom: 0rem;
-                }
+            &.up {
+                top: 0;
             }
 
-            @-webkit-keyframes arrow-move /* Safari 和 Chrome */ {
-                0% {
+
+            img.arrow {
+                position: absolute;
+                width: 60%;
+                height: auto;
+                left: 20%;
+                z-index: 5;
+
+                &.down {
                     bottom: 1rem;
+                    animation: arrow-down 1s ease infinite;
                 }
 
-                50% {
-                    bottom: 0.5rem;
+                @keyframes arrow-down {
+                    0% {
+                        bottom: 1rem;
+                    }
+
+                    50% {
+                        bottom: 0.5rem;
+                    }
+
+                    100% {
+                        bottom: 0rem;
+                    }
                 }
 
-                100% {
-                    bottom: 0rem;
-                }
-            }
+                @-moz-keyframes arrow-down /* Firefox */ {
+                    0% {
+                        bottom: 1rem;
+                    }
 
-            @-o-keyframes arrow-move /* Opera */ {
-                0% {
-                    bottom: 1rem;
+                    50% {
+                        bottom: 0.5rem;
+                    }
+
+                    100% {
+                        bottom: 0rem;
+                    }
                 }
 
-                50% {
-                    bottom: 0.5rem;
+                @-webkit-keyframes arrow-down /* Safari 和 Chrome */ {
+                    0% {
+                        bottom: 1rem;
+                    }
+
+                    50% {
+                        bottom: 0.5rem;
+                    }
+
+                    100% {
+                        bottom: 0rem;
+                    }
                 }
 
-                100% {
-                    bottom: 0rem;
+                @-o-keyframes arrow-down /* Opera */ {
+                    0% {
+                        bottom: 1rem;
+                    }
+
+                    50% {
+                        bottom: 0.5rem;
+                    }
+
+                    100% {
+                        bottom: 0rem;
+                    }
+                }
+
+                &.up {
+                    top: 1rem;
+                    animation: arrow-up 1s ease infinite;
+                    transform: rotate(180deg);
+                }
+
+                @keyframes arrow-up {
+                    0% {
+                        top: 1rem;
+                    }
+
+                    50% {
+                        top: 0.5rem;
+                    }
+
+                    100% {
+                        top: 0rem;
+                    }
+                }
+
+                @-moz-keyframes arrow-up /* Firefox */ {
+                    0% {
+                        top: 1rem;
+                    }
+
+                    50% {
+                        top: 0.5rem;
+                    }
+
+                    100% {
+                        top: 0rem;
+                    }
+                }
+
+                @-webkit-keyframes arrow-up /* Safari 和 Chrome */ {
+                    0% {
+                        top: 1rem;
+                    }
+
+                    50% {
+                        top: 0.5rem;
+                    }
+
+                    100% {
+                        top: 0rem;
+                    }
+                }
+
+                @-o-keyframes arrow-up /* Opera */ {
+                    0% {
+                        top: 1rem;
+                    }
+
+                    50% {
+                        top: 0.5rem;
+                    }
+
+                    100% {
+                        top: 0rem;
+                    }
                 }
             }
         }
